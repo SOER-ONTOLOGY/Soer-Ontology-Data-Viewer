@@ -1,0 +1,45 @@
+.centered {
+	text-align: center;
+}
+
+/* Borde */
+.page-title {
+	border: 2px solid #003f72;
+	background-color: #003f72;
+	color: #eaab00;
+	border-radius: 6px;
+	padding: 10px;
+	margin-bottom: 20px;
+	text-align: center;
+	font-family: Arial;
+	font-size: 300%;
+}
+
+.page-button {
+	margin-top: 10px;
+	margin-bottom: 25px;
+}
+/* subtitulos */
+.item,
+.item > a {
+	font-size: 30px;
+	color: #003f72;
+}
+
+/* titulos */
+.item-title {
+	font-size: 30px;
+	color: #eaab00;
+	font-weight: bold;
+}
+
+/* Mensajes de la app */
+.pink {
+	color: #003f72;
+}
+
+.svg-pointer {
+	width: 20px;
+	height: 30px;
+	transform: translate(-10px, -30px);
+}
