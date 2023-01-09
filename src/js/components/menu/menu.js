@@ -6,6 +6,9 @@ import Divider from 'material-ui/Divider';
 import MenuItems from './menu-items';
 import { withRouter } from 'react-router-dom';
 
+import IconButton from 'material-ui/IconButton';
+import NavigationMenu from 'material-ui/svg-icons/navigation/menu';
+
 class AppMenu extends Component {
 	constructor() {
 		super();
@@ -44,8 +47,8 @@ class AppMenu extends Component {
 				<div>
 					<AppBar
 						title={<span style={{ color: '#FFFFFF' }}>Visualizador de los equipos de trabajo</span>}
-						iconClassNameRight="muidocs-icon-navigation-expand-more"
 						onLeftIconButtonClick={this.handleToggle}
+						iconElementLeft={<IconButton><NavigationMenu color="#fff" /></IconButton>}
 						style={{ backgroundColor: '#003f72' }}
 					/>
 					<Drawer

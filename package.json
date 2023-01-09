@@ -30,6 +30,7 @@
 		"redux-logger": "^3.0.6",
 		"redux-thunk": "^2.2.0",
 		"sparql-connect": "^0.1.6",
+		"shards-react": "1.0.3",
 		"wellknown": "^0.5.0"
 	},
 	"scripts": {
