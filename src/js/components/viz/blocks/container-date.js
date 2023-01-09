@@ -11,10 +11,10 @@ PREFIX dcterms: <https://www.dublincore.org/specifications/dublin-core/dcmi-term
 PREFIX xs: <http://www.w3.org/2001/XMLSchema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-select ?fecha (count (?fecha) As ?conteo) where {
+select ?fecha (count (?fecha) As ?cantidad) where {
  ?evento rdf:type j.0:Events.
  ?evento j.0:date ?fecha.
-}Group by ?fecha Order by DESC(?conteo)
+}Group by ?fecha Order by DESC(?cantidad)
 `;
 
 const connector = sparqlConnect(queryBuilder, {

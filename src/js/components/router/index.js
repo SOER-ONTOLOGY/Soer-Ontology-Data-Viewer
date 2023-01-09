@@ -2,7 +2,7 @@ import React from 'react';
 import configureStore from 'js/store/configure-store';
 import { Provider } from 'react-redux';
 import 'babel-polyfill';
-import { BrowserRouter as Router, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Switch} from 'react-router-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
@@ -23,10 +23,10 @@ export default () => (
 					<Menu items={items} />
 					<Switch>
 						<PagesRoutes />
-						/>
 					</Switch>
 				</div>
 			</Router>
 		</Provider>
 	</MuiThemeProvider>
 );
+

@@ -4,7 +4,6 @@ import FloatingActionButton from 'material-ui/FloatingActionButton';
 import SkipPrevious from 'material-ui/svg-icons/av/skip-previous';
 import SkipNext from 'material-ui/svg-icons/av/skip-next';
 import { items } from '../component-list';
-import {red500} from 'material-ui/styles/colors'
 
 function PageButton({ route }) {
 	const pageRoutes = items.reduce((_, p) => {

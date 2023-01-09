@@ -5,8 +5,8 @@ function PageTitle({ title, subtitle }) {
 	return (
 		<div className="mui-row">
 			{title && (
-				<div className="mui-col-md-8 centered mui-col-md-offset-2">
-					<h2 className="page-title">
+				<div className="mui-col-md-8 centered mui-col-md-offset-2" style={{ paddingTop: "10px"}}>
+					<h2 className="page-title" style={{ fontSize: "200%" }}>
 						{title}
 						{subtitle && <div>&quot; {subtitle} &quot;</div>}
 					</h2>

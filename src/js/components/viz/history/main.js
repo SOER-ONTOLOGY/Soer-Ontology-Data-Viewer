@@ -4,6 +4,7 @@ import StaffSelect from './staff-select';
 import TeacherSelect from './teacher-select';
 import { roles } from 'js/utils/roles';
 import D from 'js/i18n';
+import Modal5 from '../../modales/modal5';
 
 class Main extends Component {
 	constructor() {
@@ -16,6 +17,7 @@ class Main extends Component {
 		const { type } = this.state;
 		return (
 			<React.Fragment>
+				 <Modal5></Modal5>
 				<div className="mui-row loading-row">
 					<div className="mui-col-md-5">
 						<Select

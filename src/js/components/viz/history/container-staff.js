@@ -10,13 +10,13 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX dcterms: <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/>
 PREFIX xs: <http://www.w3.org/2001/XMLSchema#>
 
-select ?log ?date ?type where {
+select ?log ?fecha ?tipo where {
  ?evento rdf:type j.0:Events.
  ?evento dcterms:ispartOf ?log.
  ?evento j.0:generatedBy <${staffUser}>.
- ?evento j.0:date ?date.
- ?evento j.0:tipo ?type.
-} Order by ?date
+ ?evento j.0:date ?fecha.
+ ?evento j.0:tipo ?tipo.
+} Order by ?fecha
 `;
 
 

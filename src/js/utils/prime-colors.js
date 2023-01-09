@@ -18,7 +18,6 @@ export const backgroundColor = [
 	'#2dff89',
 	'#ff8825',
 ];
-
 export const hoverBackgroundColor = [
 	'#fa3388',
 	'#0d4972',
@@ -43,4 +42,5 @@ export const hoverBackgroundColor = [
 export const radarColors = [
 	['rgba(179,181,198,0.2)', 'rgba(179,181,198,1)'],
 	['rgba(255,99,132,0.2)', 'rgba(255,99,132,1)'],
+	['rgba(136, 255, 120,0.2)', 'rgba(136, 255, 120,1)'],
 ];

@@ -4,6 +4,7 @@ import ContainerSection from './container-section';
 import ContainerSubsection from './container-subsection';
 import { structure } from 'js/utils/structure';
 import D from 'js/i18n';
+import Modal7 from '../../modales/modal7';
 
 class Main extends Component {
 	constructor() {
@@ -16,6 +17,7 @@ class Main extends Component {
 		const { type } = this.state;
 		return (
 			<React.Fragment>
+				<Modal7></Modal7>
 				<div className="mui-row loading-row">
 					<div className="mui-col-md-5">
 						<Select

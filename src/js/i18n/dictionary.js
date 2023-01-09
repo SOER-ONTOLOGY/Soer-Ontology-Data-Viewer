@@ -45,12 +45,24 @@ const dictionary = {
 		es: 'Tablas',
 	},
 	new :{
-		en: 'New sections created',
-		es: 'Nuevas secciones creadas',
+		en: 'Sections created',
+		es: 'Secciones creadas',
 	},
 	old :{
+		en: 'Subsections created',
+		es: 'Subsecciones creadas',
+	},
+	seccion :{
+		en: 'New section created',
+		es: 'Nuevas secciones creadas',
+	},
+	subseccion :{
 		en: 'New subsections created',
 		es: 'Nuevas subsecciones creadas',
+	},
+	vertical :{
+		en: 'New vertical block created',
+		es: 'Nuevas unidades creadas',
 	},
 	estructura :{
 		en: 'Course structure ',

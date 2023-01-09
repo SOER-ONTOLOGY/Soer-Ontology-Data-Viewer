@@ -4,6 +4,7 @@ import Drawer from 'material-ui/Drawer';
 import Subheader from 'material-ui/Subheader';
 import Divider from 'material-ui/Divider';
 import MenuItems from './menu-items';
+import { withRouter } from 'react-router-dom';
 
 class AppMenu extends Component {
 	constructor() {
@@ -36,30 +37,34 @@ class AppMenu extends Component {
 					/>
 				)
 		);
-
-		return (
-			<div>
-				<AppBar
-					title={<span style={{ color: '#FFFFFF' }}>Visualizador de los equipos de trabajo</span>}
-					iconClassNameRight="muidocs-icon-navigation-expand-more"
-					onLeftIconButtonClick={this.handleToggle}
-					style={{ backgroundColor: '#003f72' }}
-				/>
-				<Drawer
-					ref="leftNav"
-					docked={false}
-					open={this.state.open}
-					onRequestChange={this.handleToggle}
-					style={{
-						width: 1000,
-					}}
-					width="25%"
-				>
-					{menuItems}
-				</Drawer>
-			</div>
-		);
+		if (this.props.location.pathname === '/' || this.props.location.pathname === '/acerca-del-proyecto') {
+			return ( null )
+		} else {
+			return (
+				<div>
+					<AppBar
+						title={<span style={{ color: '#FFFFFF' }}>Visualizador de los equipos de trabajo</span>}
+						iconClassNameRight="muidocs-icon-navigation-expand-more"
+						onLeftIconButtonClick={this.handleToggle}
+						style={{ backgroundColor: '#003f72' }}
+					/>
+					<Drawer
+						ref="leftNav"
+						docked={false}
+						open={this.state.open}
+						onRequestChange={this.handleToggle}
+						style={{
+							width: 1000,
+						}}
+						width="25%"
+					>
+						{menuItems}
+					</Drawer>
+				</div>
+			);
+		}
 	}
+		
 }
 
-export default AppMenu;
+export default withRouter(AppMenu);

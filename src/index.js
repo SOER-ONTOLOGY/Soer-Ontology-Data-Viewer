@@ -6,3 +6,4 @@ import './app.css';
 
 ReactDOM.render(<Root />, document.getElementById('root'));
 registerServiceWorker();
+

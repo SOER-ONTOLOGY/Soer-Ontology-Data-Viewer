@@ -24,7 +24,7 @@ function Select({ label, options, value, onChange, multiple }) {
 	return (
 		<div>
 			<div className="mui-row">
-				<h2 className="mui-col-md-12">{label}</h2>
+				<h2 className="mui-col-md-12" style={{ fontSize: "160%" }}>{label}</h2>
 				<SelectField
 					multiple={multiple}
 					value={value}

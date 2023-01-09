@@ -4,6 +4,7 @@ import ContainerDate from './container-date';
 import ContainerType from './container-type';
 import { date_type } from 'js/utils/date-type';
 import D from 'js/i18n';
+import Modal6 from '../../modales/modal6';
 
 class Main extends Component {
 	constructor() {
@@ -16,6 +17,7 @@ class Main extends Component {
 		const { type } = this.state;
 		return (
 			<React.Fragment>
+				<Modal6></Modal6>
 				<div className="mui-row loading-row">
 					<div className="mui-col-md-5">
 						<Select
